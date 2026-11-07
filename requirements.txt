@@ -1,0 +1,7 @@
+pandas
+jsonschema
+pytest
+python-dotenv
+fastapi
+uvicorn
+httpx
