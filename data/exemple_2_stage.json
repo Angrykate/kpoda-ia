@@ -1,0 +1,16 @@
+{
+  "objectif": "Trouver un stage de deux mois",
+  "statut_proposition": "propose",
+  "echeance": null,
+  "hypotheses": ["Le CV est à jour"],
+  "etapes": [
+    {"id": "E1", "titre": "Préparer les candidatures", "indicateur_progression": "Entreprises listées",
+     "taches": [
+       {"id": "T1", "titre": "Lister dix entreprises proches", "duree_minutes": 60, "priorite": "haute", "statut": "a_faire"},
+       {"id": "T2", "titre": "Rédiger un message type", "duree_minutes": 45, "priorite": "haute", "statut": "a_faire"}]},
+    {"id": "E2", "titre": "Envoyer et relancer", "indicateur_progression": "Messages envoyés et relances faites",
+     "taches": [
+       {"id": "T3", "titre": "Envoyer les messages", "duree_minutes": 60, "priorite": "haute", "statut": "a_faire", "depend_de": ["T1", "T2"]},
+       {"id": "T4", "titre": "Relancer après une semaine", "duree_minutes": 30, "priorite": "moyenne", "statut": "a_faire", "depend_de": ["T3"]}]}
+  ]
+}

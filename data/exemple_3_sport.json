@@ -1,0 +1,15 @@
+{
+  "objectif": "Reprendre une activité physique régulière",
+  "statut_proposition": "propose",
+  "echeance": "2026-12-15",
+  "hypotheses": ["Aucune contrainte médicale particulière"],
+  "etapes": [
+    {"id": "E1", "titre": "Installer la routine", "indicateur_progression": "Séances faites par semaine",
+     "taches": [
+       {"id": "T1", "titre": "Choisir trois créneaux fixes par semaine", "duree_minutes": 15, "priorite": "haute", "statut": "a_faire"},
+       {"id": "T2", "titre": "Faire une séance légère de 30 minutes", "duree_minutes": 30, "priorite": "moyenne", "statut": "a_faire", "depend_de": ["T1"]}]},
+    {"id": "E2", "titre": "Augmenter progressivement", "indicateur_progression": "Durée des séances",
+     "taches": [
+       {"id": "T3", "titre": "Passer à des séances de 45 minutes", "duree_minutes": 45, "priorite": "moyenne", "echeance": "2026-12-01", "statut": "a_faire", "depend_de": ["T2"]}]}
+  ]
+}

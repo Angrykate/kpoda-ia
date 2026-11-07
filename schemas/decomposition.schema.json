@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Décomposition d'un objectif (v1)",
+  "type": "object",
+  "required": ["objectif", "statut_proposition", "etapes"],
+  "additionalProperties": false,
+  "properties": {
+    "objectif": {"type": "string", "minLength": 3},
+    "statut_proposition": {"type": "string", "enum": ["propose", "valide", "refuse"]},
+    "echeance": {"type": ["string", "null"], "format": "date"},
+    "hypotheses": {"type": "array", "items": {"type": "string"}},
+    "etapes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["id", "titre", "taches", "indicateur_progression"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^E[0-9]+$"},
+          "titre": {"type": "string", "minLength": 2},
+          "indicateur_progression": {"type": "string", "minLength": 2},
+          "taches": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "items": {
+              "type": "object",
+              "required": ["id", "titre", "duree_minutes", "priorite", "statut"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string", "pattern": "^T[0-9]+$"},
+                "titre": {"type": "string", "minLength": 2},
+                "duree_minutes": {"type": "integer", "minimum": 5, "maximum": 480},
+                "priorite": {"type": "string", "enum": ["haute", "moyenne", "basse"]},
+                "echeance": {"type": ["string", "null"], "format": "date"},
+                "statut": {"type": "string", "enum": ["a_faire", "en_cours", "terminee", "abandonnee"]},
+                "depend_de": {"type": "array", "items": {"type": "string", "pattern": "^T[0-9]+$"}}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

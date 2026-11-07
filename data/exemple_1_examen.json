@@ -1,0 +1,16 @@
+{
+  "objectif": "Préparer l'examen de statistiques",
+  "statut_proposition": "propose",
+  "echeance": "2026-11-30",
+  "hypotheses": ["L'examen couvre les chapitres 1 à 4", "Environ 1 h 30 disponibles par jour"],
+  "etapes": [
+    {"id": "E1", "titre": "Revoir le cours", "indicateur_progression": "Chapitres relus sur 4",
+     "taches": [
+       {"id": "T1", "titre": "Relire les chapitres 1 et 2", "duree_minutes": 90, "priorite": "haute", "echeance": "2026-11-12", "statut": "a_faire"},
+       {"id": "T2", "titre": "Relire les chapitres 3 et 4", "duree_minutes": 90, "priorite": "haute", "echeance": "2026-11-16", "statut": "a_faire", "depend_de": ["T1"]}]},
+    {"id": "E2", "titre": "S'entraîner", "indicateur_progression": "Exercices et annales faits",
+     "taches": [
+       {"id": "T3", "titre": "Refaire les exercices de TD", "duree_minutes": 120, "priorite": "haute", "echeance": "2026-11-22", "statut": "a_faire", "depend_de": ["T2"]},
+       {"id": "T4", "titre": "Faire un sujet d'annale en temps limité", "duree_minutes": 120, "priorite": "moyenne", "echeance": "2026-11-27", "statut": "a_faire", "depend_de": ["T3"]}]}
+  ]
+}
