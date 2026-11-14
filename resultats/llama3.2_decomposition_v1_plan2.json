@@ -1,0 +1,48 @@
+{
+  "objectif": "Trouver un stage de deux mois",
+  "statut_proposition": "propose",
+  "echeance": null,
+  "hypotheses": [
+    "Environ 2 heures disponibles par semaine pour la recherche",
+    "Le stage doit être en France"
+  ],
+  "etapes": [
+    {
+      "id": "E1",
+      "titre": "Rechercher les offres de stage",
+      "indicateur_progression": "Offres de stage trouvées sur 5",
+      "taches": [
+        {
+          "id": "T1",
+          "titre": "Utiliser les sites de stage en ligne",
+          "duree_minutes": 120,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T2",
+          "titre": "Contacter les entreprises pour obtenir des informations",
+          "duree_minutes": 60,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T3",
+          "titre": "Vérifier les offres de stage en ligne",
+          "duree_minutes": 60,
+          "priorite": "basse",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1",
+            "T2"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Rapport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "periode",
+    "indicateurs",
+    "resume"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "quotidien",
+        "hebdomadaire",
+        "parental"
+      ]
+    },
+    "periode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "debut",
+        "fin"
+      ],
+      "properties": {
+        "debut": {
+          "type": "string",
+          "format": "date"
+        },
+        "fin": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "indicateurs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "taches_terminees_pct",
+        "sessions_menees_a_terme_pct",
+        "reports_nombre"
+      ],
+      "properties": {
+        "taches_terminees_pct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "sessions_menees_a_terme_pct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "reports_nombre": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "creneaux_respectes_pct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "derogations_nombre": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "tendances": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "difficultes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resume": {
+      "type": "string",
+      "minLength": 10
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

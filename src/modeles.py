@@ -7,7 +7,7 @@ Le reste du code ne sait pas quel modèle est derrière. Quand le choix est fait
         ...  # appel à l'API ou au modèle local, renvoie le texte de la réponse
 """
 import json
-
+import urllib.request
 
 def modele_factice():
     """Modèle simulé pour tester hors connexion : 1re réponse invalide, 2e valide."""
@@ -31,4 +31,15 @@ def modele_factice():
         }
         return json.dumps(plan, ensure_ascii=False)
 
+    return appeler
+
+def modele_ollama(nom="llama3.2", url="http://localhost:11434/api/generate", delai=900):
+    """Appelle un modèle local via Ollama (adresse locale par défaut)."""
+    def appeler(prompt: str) -> str:
+        corps = json.dumps({"model": nom, "prompt": prompt, "stream": False,
+                            "format": "json", "options": {"temperature": 0.2}}).encode("utf-8")
+        requete = urllib.request.Request(url, data=corps,
+                                         headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(requete, timeout=delai) as reponse:
+            return json.loads(reponse.read().decode("utf-8"))["response"]
     return appeler

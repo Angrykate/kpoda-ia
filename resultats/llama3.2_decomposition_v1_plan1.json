@@ -1,0 +1,47 @@
+{
+  "objectif": "Préparer l'examen de statistiques",
+  "statut_proposition": "propose",
+  "echeance": null,
+  "hypotheses": [
+    "Environ 30 minutes disponibles par jour"
+  ],
+  "etapes": [
+    {
+      "id": "E1",
+      "titre": "Réviser les concepts de base",
+      "indicateur_progression": "Concepts de base compris sur 3",
+      "taches": [
+        {
+          "id": "T1",
+          "titre": "Réviser les formules de probabilité",
+          "duree_minutes": 30,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T2",
+          "titre": "Réviser les concepts de statistiques de population",
+          "duree_minutes": 30,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T3",
+          "titre": "Réviser les formules de variance et de standard deviation",
+          "duree_minutes": 30,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1",
+            "T2"
+          ]
+        }
+      ]
+    }
+  ]
+}

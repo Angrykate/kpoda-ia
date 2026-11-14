@@ -1,0 +1,30 @@
+{
+  "statut": "proposition",
+  "decision_par": "parent",
+  "recommandation": "assouplir",
+  "periode_semaines": 4,
+  "indicateurs": [
+    {
+      "nom": "taux de tâches terminées",
+      "valeur": 88,
+      "tendance": "hausse"
+    },
+    {
+      "nom": "reports par semaine",
+      "valeur": 1,
+      "tendance": "baisse"
+    },
+    {
+      "nom": "respect des créneaux de concentration",
+      "valeur": 80,
+      "tendance": "stable"
+    }
+  ],
+  "raisons": [
+    "Les tâches sont terminées à 88 % sur quatre semaines, en progression.",
+    "Les reports sont rares et en baisse."
+  ],
+  "hypotheses": [
+    "Les semaines observées sont représentatives de la période."
+  ]
+}

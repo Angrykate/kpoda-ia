@@ -4,6 +4,7 @@ import re
 from pathlib import Path
 
 from .confidentialite import donnees_identifiantes, masquer
+from .garde_fous import controler_sortie
 from .validation import valider
 
 PROMPT = (Path(__file__).resolve().parent.parent / "prompts" / "decomposition_v0.txt")
@@ -42,8 +43,13 @@ def decomposer(objectif, modele, max_tentatives=3):
         else:
             erreurs = valider(plan)
             if not erreurs:
-                return plan
-            derniere_erreur = "; ".join(erreurs[:5])
+                violations = controler_sortie(plan)
+                if not violations:
+                    return plan
+                derniere_erreur = ("affirmation interdite : "
+                                   + "; ".join(f"« {v['extrait']} » ({v['chemin']})" for v in violations[:3]))
+            else:
+                derniere_erreur = "; ".join(erreurs[:5])
         prompt += (f"\n\nTa réponse précédente était invalide ({derniere_erreur}). "
                    "Corrige-la et réponds uniquement par le JSON.")
     raise ErreurDecomposition(f"échec après {max_tentatives} tentatives : {derniere_erreur}")

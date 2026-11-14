@@ -1,0 +1,25 @@
+{
+  "statut": "en_attente_de_validation",
+  "sessions": [
+    {
+      "id": "S1",
+      "tache_id": "T1",
+      "debut": "2026-11-16T17:00",
+      "fin": "2026-11-16T18:30"
+    },
+    {
+      "id": "S2",
+      "tache_id": "T2",
+      "debut": "2026-11-16T18:40",
+      "fin": "2026-11-16T19:00"
+    },
+    {
+      "id": "S3",
+      "tache_id": "T2",
+      "debut": "2026-11-17T17:00",
+      "fin": "2026-11-17T17:40"
+    }
+  ],
+  "non_planifiees": [],
+  "avertissements": []
+}

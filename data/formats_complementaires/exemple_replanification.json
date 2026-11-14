@@ -1,0 +1,19 @@
+{
+  "statut": "en_attente_de_validation",
+  "motif": "La tâche « Faire des exercices » prévue le 16/11 n'a pas été réalisée.",
+  "propositions": [
+    {
+      "tache_id": "T3",
+      "ancien_creneau": {
+        "debut": "2026-11-16T17:00",
+        "fin": "2026-11-16T18:30"
+      },
+      "nouveau_creneau": {
+        "debut": "2026-11-17T17:00",
+        "fin": "2026-11-17T18:30"
+      },
+      "raison": "Premier créneau libre avant l'échéance du 20/11."
+    }
+  ],
+  "avertissements": []
+}

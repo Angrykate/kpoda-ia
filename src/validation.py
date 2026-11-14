@@ -17,7 +17,7 @@ def valider(donnees, nom="decomposition"):
     validateur = Draft202012Validator(charger_schema(nom), format_checker=FormatChecker())
     erreurs = [f"{'/'.join(map(str, e.path)) or 'racine'} : {e.message}"
                for e in validateur.iter_errors(donnees)]
-    if erreurs:
+    if erreurs or nom != "decomposition":
         return erreurs
     return _verifier_coherence(donnees)
 

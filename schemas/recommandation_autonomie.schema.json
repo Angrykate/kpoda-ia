@@ -1,0 +1,75 @@
+{
+  "title": "Recommandation d'autonomie",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "statut",
+    "decision_par",
+    "recommandation",
+    "periode_semaines",
+    "indicateurs",
+    "raisons"
+  ],
+  "properties": {
+    "statut": {
+      "const": "proposition"
+    },
+    "decision_par": {
+      "const": "parent"
+    },
+    "recommandation": {
+      "enum": [
+        "maintenir",
+        "assouplir",
+        "renforcer"
+      ]
+    },
+    "periode_semaines": {
+      "type": "integer",
+      "minimum": 3
+    },
+    "indicateurs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "nom",
+          "valeur",
+          "tendance"
+        ],
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "valeur": {
+            "type": "number"
+          },
+          "tendance": {
+            "enum": [
+              "hausse",
+              "stable",
+              "baisse"
+            ]
+          }
+        }
+      }
+    },
+    "raisons": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

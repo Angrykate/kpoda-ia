@@ -1,0 +1,20 @@
+{
+  "type": "hebdomadaire",
+  "periode": {
+    "debut": "2026-11-09",
+    "fin": "2026-11-15"
+  },
+  "indicateurs": {
+    "taches_terminees_pct": 75,
+    "sessions_menees_a_terme_pct": 80,
+    "reports_nombre": 2,
+    "creneaux_respectes_pct": 70
+  },
+  "tendances": [
+    "Taux de tâches terminées en hausse par rapport à la semaine précédente."
+  ],
+  "difficultes": [
+    "Deux reports le mercredi soir."
+  ],
+  "resume": "Semaine correcte : trois tâches sur quatre terminées, avec deux reports le mercredi."
+}

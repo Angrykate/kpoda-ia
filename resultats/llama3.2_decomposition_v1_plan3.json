@@ -1,0 +1,63 @@
+{
+  "objectif": "Reprendre une activité physique régulière",
+  "statut_proposition": "propose",
+  "hypotheses": [
+    "Environ 30 minutes disponibles par jour"
+  ],
+  "etapes": [
+    {
+      "id": "E1",
+      "titre": "Définir l'activité physique",
+      "indicateur_progression": "Activité physique choisie sur 2",
+      "taches": [
+        {
+          "id": "T1",
+          "titre": "Rechercher des activités de cardio",
+          "duree_minutes": 30,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T2",
+          "titre": "Choisir une activité de force",
+          "duree_minutes": 30,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "titre": "Commencer à pratiquer",
+      "indicateur_progression": "Activité physique pratiquée sur 3",
+      "taches": [
+        {
+          "id": "T3",
+          "titre": "Commencer avec une séance de cardio",
+          "duree_minutes": 15,
+          "priorite": "haute",
+          "echeance": "2024-03-15",
+          "statut": "a_faire",
+          "depend_de": [
+            "T1"
+          ]
+        },
+        {
+          "id": "T4",
+          "titre": "Pratiquer une séance de force",
+          "duree_minutes": 30,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T2"
+          ]
+        }
+      ]
+    }
+  ]
+}
