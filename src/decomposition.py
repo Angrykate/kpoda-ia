@@ -7,7 +7,7 @@ from .confidentialite import donnees_identifiantes, masquer
 from .garde_fous import controler_sortie
 from .validation import valider
 
-PROMPT = (Path(__file__).resolve().parent.parent / "prompts" / "decomposition_v0.txt")
+PROMPT = (Path(__file__).resolve().parent.parent / "prompts" / "decomposition_v1.txt")
 
 
 class ErreurDecomposition(Exception):

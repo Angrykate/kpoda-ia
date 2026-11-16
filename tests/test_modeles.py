@@ -58,6 +58,6 @@ def test_reponse_bloquee():
 
 def test_cle_absente(monkeypatch):
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    monkeypatch.chdir("/tmp")                       # aucun fichier .env ici
+    monkeypatch.setattr("dotenv.load_dotenv", lambda *args, **kwargs: False)  # ignore le vrai .env
     with pytest.raises(ErreurModele):
         modele_gemini("gemini-test")

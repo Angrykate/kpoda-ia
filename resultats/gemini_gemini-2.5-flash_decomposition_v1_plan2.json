@@ -1,0 +1,191 @@
+{
+  "objectif": "Trouver un stage de deux mois",
+  "statut_proposition": "propose",
+  "echeance": null,
+  "hypotheses": [
+    "L'utilisateur a une idée du domaine de stage souhaité.",
+    "L'utilisateur peut consacrer quelques heures par semaine à la recherche et aux candidatures.",
+    "L'utilisateur a déjà des bases pour un CV ou peut le créer."
+  ],
+  "etapes": [
+    {
+      "id": "E1",
+      "titre": "Définir le projet de stage",
+      "indicateur_progression": "Objectif de stage défini (X sur 3)",
+      "taches": [
+        {
+          "id": "T1",
+          "titre": "Définir les compétences et missions recherchées pour le stage",
+          "duree_minutes": 90,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T2",
+          "titre": "Lister les secteurs d'activité ou types d'entreprises cibles",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T3",
+          "titre": "Estimer les dates de début et fin de stage souhaitées",
+          "duree_minutes": 30,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "titre": "Préparer les outils de candidature",
+      "indicateur_progression": "Dossier de candidature prêt (X sur 3)",
+      "taches": [
+        {
+          "id": "T4",
+          "titre": "Mettre à jour son CV avec les informations pertinentes",
+          "duree_minutes": 180,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1"
+          ]
+        },
+        {
+          "id": "T5",
+          "titre": "Rédiger une lettre de motivation type et personnalisable",
+          "duree_minutes": 120,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1",
+            "T2"
+          ]
+        },
+        {
+          "id": "T6",
+          "titre": "Optimiser son profil LinkedIn ou le créer",
+          "duree_minutes": 150,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "titre": "Rechercher des offres de stage",
+      "indicateur_progression": "Sources d'offres identifiées (X sur 3)",
+      "taches": [
+        {
+          "id": "T7",
+          "titre": "Identifier les plateformes de recherche de stage pertinentes",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T8",
+          "titre": "Rechercher des entreprises cibles spécifiques et leurs opportunités",
+          "duree_minutes": 180,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T2"
+          ]
+        },
+        {
+          "id": "T9",
+          "titre": "Solliciter son réseau professionnel pour des pistes de stage",
+          "duree_minutes": 90,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "titre": "Postuler et suivre les candidatures",
+      "indicateur_progression": "Candidatures envoyées et suivies (X sur 3)",
+      "taches": [
+        {
+          "id": "T10",
+          "titre": "Envoyer les premières candidatures ciblées",
+          "duree_minutes": 240,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T4",
+            "T5",
+            "T6"
+          ]
+        },
+        {
+          "id": "T11",
+          "titre": "Mettre en place un tableau de suivi des candidatures envoyées",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T12",
+          "titre": "Planifier et envoyer des relances pour les candidatures sans réponse",
+          "duree_minutes": 120,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T10",
+            "T11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E5",
+      "titre": "Préparer les entretiens",
+      "indicateur_progression": "Préparation aux entretiens (X sur 2)",
+      "taches": [
+        {
+          "id": "T13",
+          "titre": "Préparer des réponses aux questions classiques d'entretien de stage",
+          "duree_minutes": 180,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1"
+          ]
+        },
+        {
+          "id": "T14",
+          "titre": "Préparer une liste de questions pertinentes à poser à l'employeur",
+          "duree_minutes": 90,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "objectif": "Préparer l'examen de statistiques",
+  "statut_proposition": "propose",
+  "echeance": null,
+  "hypotheses": [
+    "Environ 2 heures disponibles par session de révision",
+    "Matériel de cours (notes, exercices) est disponible"
+  ],
+  "etapes": [
+    {
+      "id": "E1",
+      "titre": "Comprendre le programme",
+      "indicateur_progression": "Sujets de l'examen identifiés sur 3",
+      "taches": [
+        {
+          "id": "T1",
+          "titre": "Rassembler tous les documents du cours",
+          "duree_minutes": 45,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T2",
+          "titre": "Lire le plan de cours et les objectifs de l'examen",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1"
+          ]
+        },
+        {
+          "id": "T3",
+          "titre": "Lister les chapitres et notions clés à réviser",
+          "duree_minutes": 75,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "titre": "Réviser les bases théoriques",
+      "indicateur_progression": "Notions fondamentales révisées sur 3",
+      "taches": [
+        {
+          "id": "T4",
+          "titre": "Relire les fiches de cours du premier bloc thématique",
+          "duree_minutes": 90,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T3"
+          ]
+        },
+        {
+          "id": "T5",
+          "titre": "Relire les fiches de cours du deuxième bloc thématique",
+          "duree_minutes": 90,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T4"
+          ]
+        },
+        {
+          "id": "T6",
+          "titre": "Créer une fiche de synthèse des formules et définitions clés",
+          "duree_minutes": 60,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "titre": "S'entraîner aux exercices",
+      "indicateur_progression": "Exercices pratiques terminés sur 3",
+      "taches": [
+        {
+          "id": "T7",
+          "titre": "Refaire les exercices corrigés du premier bloc",
+          "duree_minutes": 120,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T6"
+          ]
+        },
+        {
+          "id": "T8",
+          "titre": "Refaire les exercices corrigés du deuxième bloc",
+          "duree_minutes": 120,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T7"
+          ]
+        },
+        {
+          "id": "T9",
+          "titre": "Tenter un exercice d'application générale sans correction",
+          "duree_minutes": 90,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "titre": "Évaluer et approfondir",
+      "indicateur_progression": "Points faibles révisés sur 3",
+      "taches": [
+        {
+          "id": "T10",
+          "titre": "Réaliser un examen blanc complet (en temps limité)",
+          "duree_minutes": 180,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T9"
+          ]
+        },
+        {
+          "id": "T11",
+          "titre": "Identifier les notions non maîtrisées ou les erreurs fréquentes",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T10"
+          ]
+        },
+        {
+          "id": "T12",
+          "titre": "Revoir spécifiquement les notions identifiées comme difficiles",
+          "duree_minutes": 120,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T11"
+          ]
+        }
+      ]
+    }
+  ]
+}

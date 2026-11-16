@@ -1,0 +1,170 @@
+{
+  "objectif": "Reprendre une activité physique régulière",
+  "statut_proposition": "propose",
+  "echeance": null,
+  "hypotheses": [
+    "Disponibilité d'au moins 30 minutes par session d'activité physique, plusieurs fois par semaine.",
+    "Absence de contre-indication médicale majeure pour reprendre une activité modérée sans supervision immédiate.",
+    "Motivation à débuter progressivement pour éviter les blessures et favoriser la pérennité de l'habitude."
+  ],
+  "etapes": [
+    {
+      "id": "E1",
+      "titre": "Évaluation et objectifs",
+      "indicateur_progression": "Situation et objectifs définis (3 tâches sur 3)",
+      "taches": [
+        {
+          "id": "T1",
+          "titre": "Évaluer son niveau de forme actuel",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": []
+        },
+        {
+          "id": "T2",
+          "titre": "Définir des objectifs clairs et réalistes",
+          "duree_minutes": 45,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T1"
+          ]
+        },
+        {
+          "id": "T3",
+          "titre": "Lister les activités physiques envisagées",
+          "duree_minutes": 30,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "titre": "Planification initiale",
+      "indicateur_progression": "Programme hebdomadaire établi (3 tâches sur 3)",
+      "taches": [
+        {
+          "id": "T4",
+          "titre": "Identifier les créneaux horaires disponibles",
+          "duree_minutes": 30,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T3"
+          ]
+        },
+        {
+          "id": "T5",
+          "titre": "Établir un programme hebdomadaire de base",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T4"
+          ]
+        },
+        {
+          "id": "T6",
+          "titre": "Préparer l'équipement nécessaire",
+          "duree_minutes": 45,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "titre": "Mise en pratique progressive",
+      "indicateur_progression": "Premières séances réalisées (3 tâches sur 3)",
+      "taches": [
+        {
+          "id": "T7",
+          "titre": "Réaliser la première séance d'activité",
+          "duree_minutes": 60,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T6"
+          ]
+        },
+        {
+          "id": "T8",
+          "titre": "Noter ses sensations post-séance",
+          "duree_minutes": 15,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T7"
+          ]
+        },
+        {
+          "id": "T9",
+          "titre": "Adapter l'intensité pour la prochaine séance",
+          "duree_minutes": 20,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "titre": "Suivi et ajustement",
+      "indicateur_progression": "Routine de suivi active (3 tâches sur 3)",
+      "taches": [
+        {
+          "id": "T10",
+          "titre": "Enregistrer les séances effectuées",
+          "duree_minutes": 15,
+          "priorite": "moyenne",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T9"
+          ]
+        },
+        {
+          "id": "T11",
+          "titre": "Réévaluer les objectifs à moyen terme",
+          "duree_minutes": 45,
+          "priorite": "haute",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T10"
+          ]
+        },
+        {
+          "id": "T12",
+          "titre": "Introduire de nouvelles activités ou défis",
+          "duree_minutes": 30,
+          "priorite": "basse",
+          "echeance": null,
+          "statut": "a_faire",
+          "depend_de": [
+            "T11"
+          ]
+        }
+      ]
+    }
+  ]
+}
